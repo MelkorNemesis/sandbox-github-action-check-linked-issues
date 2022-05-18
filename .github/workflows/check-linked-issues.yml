@@ -10,7 +10,7 @@ jobs:
     name: Check linked issues
     permissions: write-all
     steps:
-      - uses: nearform/github-action-check-linked-issues@edb4af0ba0555f6197a520058d6d76e2992b1dab
+      - uses: nearform/github-action-check-linked-issues@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           exclude-branches: 'release/**, dependabot/**'
